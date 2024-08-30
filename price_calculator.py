@@ -14,5 +14,4 @@ class PriceCalculator:
             article_price = article_price * quantity
             total_price = total_price + article_price
 
-        print(f"Total price: {total_price}")
         return total_price
