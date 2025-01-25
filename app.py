@@ -52,7 +52,7 @@ def contact_us():
     name = st.text_input("Name")
     email = st.text_input("Email")
     phone_number = st.text_input("Phone Number")
-    pax = st.text_input("PAX Code")
+    pax = st.text_input("PAX Code", value=st.session_state.pax_code, disabled=True)
     message = st.text_area("Message")
 
     if st.button("Submit"):
@@ -90,14 +90,17 @@ price_calculator = PriceCalculator()
 # Adding a text input box
 pax_code = st.text_input("Enter your PAX Code:")
 
+if 'pax_code' not in st.session_state:
+    st.session_state.pax_code = ''
+
+
 if st.button("Enter"):
 
-    if 'something' not in st.session_state:
-        st.session_state.something = ''
-
     # Action to be performed when the button is clicked
-    if len(pax_code) is 6:
+    if len(pax_code) == 6:
         try:
+            st.session_state.pax_code = pax_code
+
             data = scraper.fetch_ikea_data(pax_code)
             results = scraper.write_data_to_table(pax_code, data)
             st.write(f"Item Codes and Quantities in {pax_code}")

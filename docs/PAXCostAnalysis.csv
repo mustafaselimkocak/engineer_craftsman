@@ -23,6 +23,7 @@ korpus,75x58x236,40458233,25
 korpus,75x58x201,20458229,25
 korpus,75x58x236,70458236,25
 korpus,75x58x201,60458232,25
+korpus,50x58x201,90458216,25
 Eckanbauelement/4 Böden,53x58x236 cm,30346934,40
 Eckanbauelement/4 Böden,53x58x201,70346932,40
 Eckanbauelement/4 Böden,53x35x236,80346941,40
@@ -51,6 +52,7 @@ boden,50x58,90509145,3
 boden,100x58,10277984,3
 boden,75x58,50277977,3
 boden,50x58,70277981,3
+boden,50x58,60509043,3
 schublade,100x58,90246352,7
 schublade,100x35,70246758,7
 schublade,75x58,10246332,7
@@ -63,6 +65,7 @@ schublade,50x58,20509196,7
 schublade,100x58,70246348,7
 schublade,75x58,90246328,7
 schublade,50x58,50246306,7
+schublade,50x58,60509076,7
 Netzdrahtkorb,100x58,00257298,3
 Netzdrahtkorb,100x35,90257294,3
 Netzdrahtkorb,75x58,20257315,3
@@ -90,6 +93,7 @@ Ausziehboden,50x58,10509187,3
 Ausziehboden,100x58,30246388,3
 Ausziehboden,75x58,80246376,3
 Ausziehboden,50x58,00246356,3
+Ausziehboden,50x58,80509099,3
 Kleiderstange,100,30256891,2
 Kleiderstange,75,40256895,2
 Kleiderstange,50,90256893,2
@@ -540,6 +544,7 @@ beleuchtung,71 cm,90474909,0
 Schiebetürpaar,150x201 cm,10521537,25
 Schiebetürpaar,150x236 cm,90521538,25
 Schiebetürpaar,200x201 cm,70521539,30
+Schiebetürpaar,200x201 cm,20521532,50
 Schiebetürpaar,200x236 cm,30521541,30
 Schiebetürpaar,150x201 cm,60521549,25
 Schiebetürpaar,150x236 cm,00521552,25
