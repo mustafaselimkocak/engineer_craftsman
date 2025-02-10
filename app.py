@@ -103,10 +103,11 @@ if st.button("Enter"):
 
             data = scraper.fetch_ikea_data(pax_code)
             results = scraper.write_data_to_table(pax_code, data)
-            st.write(f"Item Codes and Quantities in {pax_code}")
+            st.write(f"Item Codes and Quantities in PAX Design with code: {pax_code}")
             st.dataframe(results)
             price = price_calculator.calculate_prices(results)
-            st.write(f"Estimated price for assembly: {price} €")
+            price = round((price/1.19))
+            st.write(f"THE COST:  {price} €  (excl. VAT)")
 
         except Exception as e:
             print(e)
