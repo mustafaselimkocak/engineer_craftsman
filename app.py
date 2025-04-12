@@ -106,8 +106,8 @@ if st.button("Enter"):
             st.write(f"Item Codes and Quantities in PAX Design with code: {pax_code}")
             st.dataframe(results)
             price = price_calculator.calculate_prices(results)
-            price = round((price/1.19))
-            st.write(f"THE COST:  {price} €  (excl. VAT)")
+            price = round(price)
+            st.write(f"THE COST:  {price} €  (incl. VAT)")
 
         except Exception as e:
             print(e)
