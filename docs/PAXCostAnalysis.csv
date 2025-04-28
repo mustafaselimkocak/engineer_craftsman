@@ -43,6 +43,8 @@ beleuchtung,60,50529230,8
 beleuchtung,standard,90519917,8
 beleuchtung,96,20589536,8
 beleuchtung,96,50589549,8
+beleuchtung,71,20589485,8
+beleuchtung,46,00589269,8
 boden,100x58,70277957,3
 boden,100x35,00277989,3
 boden,75x58,90277961,3
@@ -448,6 +450,7 @@ Knopf,20 mm,10338421,0
 Knopf,13 mm,30338420,0
 Knopf,21 mm,20588004,0
 Knopf,21 mm,70588006,0
+Knopf,15 mm,60408685,0
 beleuchtung,71 cm,40474902,8
 beleuchtung,46 cm,30435355,8
 beleuchtung,46 cm,70474905,8
