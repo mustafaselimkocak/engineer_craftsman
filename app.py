@@ -1,7 +1,9 @@
 import streamlit as st
 from scraper import Scraper
 from price_calculator import PriceCalculator
-import email_handler
+
+
+# import email_handler
 
 
 def contact_us():
@@ -26,11 +28,9 @@ def contact_us():
     col1.write(
         "For any inquiries, you can email us at [engineercraftsman@gmail.com](mailto:engineercraftsman@gmail.com).")
 
-
     col2.subheader('📞 Call Us')
     engineer_craftsman_phone = "+491639171379"
     col2.write(f"You can also reach us by phone at {engineer_craftsman_phone}.")
-
 
     col3.subheader('💬 WhatsApp Us')
     message = "Hello, I would like to know more about your services."
@@ -44,33 +44,6 @@ def contact_us():
     st.write('')
 
 
-    # Contact Form
-    st.subheader("📋 Contact Form")
-    st.write("Alternatively, you can fill out the contact form below, and we'll get back to you as soon as possible:")
-
-    # Create a simple contact form
-    name = st.text_input("Name")
-    email = st.text_input("Email")
-    phone_number = st.text_input("Phone Number")
-    pax = st.text_input("PAX Code", value=st.session_state.pax_code, disabled=True)
-    message = st.text_area("Message")
-
-    if st.button("Submit"):
-
-        if name and email and phone_number and pax and message:
-
-            # Send email
-            email_sent = email_handler.send_email(name, email, phone_number, pax, message)
-
-            if email_sent:
-                st.success("Thank you for your message! We will get back to you soon.")
-                # TODO clear text fields
-            else:
-                st.error("Failed to send message. Please try again later.")
-        else:
-            st.error("Please fill out all fields before submitting.")
-
-
 ############################################################################################################
 
 st.set_page_config(
@@ -78,7 +51,6 @@ st.set_page_config(
     page_icon="docs/logo.png",
     layout="wide"
 )
-
 
 # Title of the app
 st.title("PAX Price Calculator")
@@ -92,7 +64,6 @@ pax_code = st.text_input("Enter your PAX Code:")
 
 if 'pax_code' not in st.session_state:
     st.session_state.pax_code = ''
-
 
 if st.button("Enter"):
 
@@ -114,7 +85,6 @@ if st.button("Enter"):
             st.write("Not a correct PAX code. Please check your order!")
     else:
         st.write("Not a correct PAX code. Please check your order!")
-
 
 st.write('')
 st.write('')
