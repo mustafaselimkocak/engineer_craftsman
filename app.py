@@ -53,7 +53,7 @@ st.set_page_config(
 )
 
 # Title of the app
-st.title("PAX Price Calculator")
+st.title("Engineer Craftsman PAX Price Calculator")
 
 scraper = Scraper()
 
