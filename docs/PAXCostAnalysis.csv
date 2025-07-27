@@ -18,6 +18,7 @@ korpus,50x58x236,70458222,25
 korpus,50x58x236,10458220,25
 korpus,50x58x201,50458218,25
 korpus,75x58x236,90458235,25
+korpus,75x58x236,20458234,25
 korpus,75x58x201,80458231,25
 korpus,75x35x236,60458227,25
 korpus,75x35x201,30458224,25
@@ -45,6 +46,7 @@ beleuchtung,standard,90519917,8
 beleuchtung,96,20589536,8
 beleuchtung,96,50589549,8
 beleuchtung,71,20589485,8
+beleuchtung,71,80589519,8
 beleuchtung,46,00589269,8
 boden,100x58,70277957,3
 boden,100x35,00277989,3
@@ -500,6 +502,7 @@ Griff,335 mm,50338419,0
 Griff,143 mm,00588000,0
 Griff,143 mm,80588001,0
 Griff,65 mm,20348896,0
+Griff,394 mm,40553659,0
 Kabelloser Dimmer/Schalter,NA,20528128,0
 4 Paneele f Schiebetürrahmen,75x236,70480685,0
 4 Paneele f Schiebetürrahmen,75x201,20480683,0
