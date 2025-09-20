@@ -63,22 +63,22 @@ boden,100x58,10277984,3
 boden,75x58,50277977,3
 boden,50x58,70277981,3
 boden,50x58,60509043,3
-schublade,100x58,90246352,7
-schublade,100x58,50509072,7
-schublade,100x58,20509083,7
-schublade,100x35,70246758,7
-schublade,75x58,10246332,7
-schublade,75x35,70246744,7
-schublade,50x58,10246308,7
-schublade,50x35,30246722,7
-schublade,100x58,90509193,7
-schublade,75x58,60509199,7
-schublade,75x58,90509089,7
-schublade,50x58,20509196,7
-schublade,100x58,70246348,7
-schublade,75x58,90246328,7
-schublade,50x58,50246306,7
-schublade,50x58,60509076,7
+schublade,100x58,90246352,8
+schublade,100x58,50509072,8
+schublade,100x58,20509083,8
+schublade,100x35,70246758,8
+schublade,75x58,10246332,8
+schublade,75x35,70246744,8
+schublade,50x58,10246308,8
+schublade,50x35,30246722,8
+schublade,100x58,90509193,8
+schublade,75x58,60509199,8
+schublade,75x58,90509089,8
+schublade,50x58,20509196,8
+schublade,100x58,70246348,8
+schublade,75x58,90246328,8
+schublade,50x58,50246306,8
+schublade,50x58,60509076,8
 Netzdrahtkorb,100x58,00257298,3
 Netzdrahtkorb,100x35,90257294,3
 Netzdrahtkorb,75x58,20257315,3
@@ -558,30 +558,28 @@ Griff,154 mm,20405759,0
 Griff,346 mm,60405757,0
 Griff,141 mm,90553685,0
 Griff,141 mm,40565285,0
-beleuchtung,46 cm,10474908,0
-beleuchtung,71 cm,90474909,0
-Schiebetürpaar,150x201 cm,10521537,25
-Schiebetürpaar,150x236 cm,90521538,25
-Schiebetürpaar,200x201 cm,70521539,30
-Schiebetürpaar,200x201 cm,20521532,50
-Schiebetürpaar,200x236 cm,30521541,30
-Schiebetürpaar,150x201 cm,60521549,25
-Schiebetürpaar,150x236 cm,00521552,25
-Schiebetürpaar,200x201 cm,60521554,30
-Schiebetürpaar,200x236 cm,90521557,30
-Schiebetürpaar,150x201 cm,20510958,25
-Schiebetürpaar,150x236 cm,80510960,25
-Schiebetürpaar,200x201 cm,40510962,30
-Schiebetürpaar,200x236 cm,00510964,30
-Schiebetürpaar,150x201 cm,70521558,25
-Schiebetürpaar,150x236 cm,30521560,25
-Schiebetürpaar,200x201 cm,70521563,30
-Schiebetürpaar,200x236 cm,20521565,30
-Schiebetürpaar,150x201 cm,90510950,25
-Schiebetürpaar,150x236 cm,50510952,25
-Schiebetürpaar,200x201 cm,10510954,30
-Schiebetürpaar,200x236 cm,60510956,30
-Schiebetürpaar,200x236 cm,80521534,30
+Schiebetürpaar,150x201 cm,10521537,30
+Schiebetürpaar,150x236 cm,90521538,30
+Schiebetürpaar,200x201 cm,70521539,40
+Schiebetürpaar,200x201 cm,20521532,40
+Schiebetürpaar,200x236 cm,30521541,40
+Schiebetürpaar,150x201 cm,60521549,30
+Schiebetürpaar,150x236 cm,00521552,30
+Schiebetürpaar,200x201 cm,60521554,40
+Schiebetürpaar,200x236 cm,90521557,40
+Schiebetürpaar,150x201 cm,20510958,30
+Schiebetürpaar,150x236 cm,80510960,30
+Schiebetürpaar,200x201 cm,40510962,40
+Schiebetürpaar,200x236 cm,00510964,40
+Schiebetürpaar,150x201 cm,70521558,30
+Schiebetürpaar,150x236 cm,30521560,30
+Schiebetürpaar,200x201 cm,70521563,40
+Schiebetürpaar,200x236 cm,20521565,40
+Schiebetürpaar,150x201 cm,90510950,30
+Schiebetürpaar,150x236 cm,50510952,30
+Schiebetürpaar,200x201 cm,10510954,40
+Schiebetürpaar,200x236 cm,60510956,40
+Schiebetürpaar,200x236 cm,80521534,40
 Griff,116 mm,00336432,0
 Knopf,27 mm,40347508,0
 Knopf,20 mm,20347509,0
