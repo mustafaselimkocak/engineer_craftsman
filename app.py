@@ -78,7 +78,8 @@ if st.button("Enter"):
             st.dataframe(results)
             price = price_calculator.calculate_prices(results)
             price = round(price)
-            st.write(f"THE COST:  {price} €  (incl. VAT)")
+            st.write(f"THE COST:  {price} €")
+            #st.write(f"THE COST:  {price} €  (incl. VAT)")
 
         except Exception as e:
             print(e)
