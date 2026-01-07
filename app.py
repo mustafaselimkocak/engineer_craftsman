@@ -4,7 +4,7 @@ from price_calculator import PriceCalculator
 
 
 # import email_handler 
-# whitespcae
+# whitespace for streamlit update !!!
 
 def contact_us():
     # Title for the Contact Us section
