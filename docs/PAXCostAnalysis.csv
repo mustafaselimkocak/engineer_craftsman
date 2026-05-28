@@ -27,11 +27,12 @@ korpus,75x58x201,20458229,25
 korpus,75x58x236,70458236,25
 korpus,75x58x201,60458232,25
 korpus,50x58x201,90458216,25
-Eckanbauelement/4 Böden,53x58x236 cm,30346934,40
-Eckanbauelement/4 Böden,53x58x201,70346932,40
-Eckanbauelement/4 Böden,53x35x236,80346941,40
-Eckanbauelement/4 Böden,53x35x201,40346938,40
+Eckanbauelement/4 Böden,53x58x236,30346934,40
+Eckanbauelement/4 Böden,53x58x236,10515112,40
 Eckanbauelement/4 Böden,53x58x236,20515121,40
+Eckanbauelement/4 Böden,53x35x236,80346941,40
+Eckanbauelement/4 Böden,53x58x201,70346932,40
+Eckanbauelement/4 Böden,53x35x201,40346938,40
 Eckanbauelement/4 Böden,53x58x201,60515119,40
 beleuchtung,96,20474903,8
 beleuchtung,standard,00516819,8
@@ -47,8 +48,13 @@ beleuchtung,96,20589536,8
 beleuchtung,96,50589549,8
 beleuchtung,71,20589485,8
 beleuchtung,71,80589519,8
+beleuchtung,71,10589476,8
 beleuchtung,46,00589269,8
 beleuchtung,46,70589416,8
+beleuchtung,71 cm,40474902,8
+beleuchtung,46 cm,30435355,8
+beleuchtung,46 cm,70474905,8
+beleuchtung,71 cm,50474906,8
 boden,100x58,70277957,3
 boden,100x35,00277989,3
 boden,75x58,90277961,3
@@ -464,10 +470,16 @@ Knopf,13 mm,30338420,0
 Knopf,21 mm,20588004,0
 Knopf,21 mm,70588006,0
 Knopf,15 mm,60408685,0
-beleuchtung,71 cm,40474902,8
-beleuchtung,46 cm,30435355,8
-beleuchtung,46 cm,70474905,8
-beleuchtung,71 cm,50474906,8
+Knopf,27 mm,40347508,0
+Knopf,20 mm,20347509,0
+Knopf,35 mm,60347507,0
+Knopf,27 mm,80347506,0
+Knopf,20 mm,30347504,0
+Knopf,35 mm,00347505,0
+Knopf,27 mm,00347510,0
+Knopf,20 mm,50347503,0
+Knopf,35 mm,80347511,0
+Knopf,16 mm,90625588,0
 Rahmen f Schiebetürpaar mit Schiene,150x236,20458187,40
 Rahmen f Schiebetürpaar mit Schiene,150x201,90458184,40
 Rahmen f Schiebetürpaar mit Schiene,200x201,60458190,50
@@ -583,15 +595,6 @@ Schiebetürpaar,200x201 cm,10510954,40
 Schiebetürpaar,200x236 cm,60510956,40
 Schiebetürpaar,200x236 cm,80521534,40
 Griff,116 mm,00336432,0
-Knopf,27 mm,40347508,0
-Knopf,20 mm,20347509,0
-Knopf,35 mm,60347507,0
-Knopf,27 mm,80347506,0
-Knopf,20 mm,30347504,0
-Knopf,35 mm,00347505,0
-Knopf,27 mm,00347510,0
-Knopf,20 mm,50347503,0
-Knopf,35 mm,80347511,0
 Tasche,90x53x19 cm,20591049,0
 Tasche,65x53x19 cm,10591059,0
 Tasche,43x53x19 cm,60591047,0
