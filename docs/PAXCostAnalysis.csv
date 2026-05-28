@@ -64,22 +64,22 @@ boden,100x58,10277984,3
 boden,75x58,50277977,3
 boden,50x58,70277981,3
 boden,50x58,60509043,3
-schublade,100x58,90246352,8
-schublade,100x58,50509072,8
-schublade,100x58,20509083,8
-schublade,100x35,70246758,8
-schublade,75x58,10246332,8
-schublade,75x35,70246744,8
-schublade,50x58,10246308,8
-schublade,50x35,30246722,8
-schublade,100x58,90509193,8
-schublade,75x58,60509199,8
-schublade,75x58,90509089,8
-schublade,50x58,20509196,8
-schublade,100x58,70246348,8
-schublade,75x58,90246328,8
-schublade,50x58,50246306,8
-schublade,50x58,60509076,8
+schublade,100x58,90246352,10
+schublade,100x58,50509072,10
+schublade,100x58,20509083,10
+schublade,100x35,70246758,10
+schublade,75x58,10246332,10
+schublade,75x35,70246744,10
+schublade,50x58,10246308,10
+schublade,50x35,30246722,10
+schublade,100x58,90509193,10
+schublade,75x58,60509199,10
+schublade,75x58,90509089,10
+schublade,50x58,20509196,10
+schublade,100x58,70246348,10
+schublade,75x58,90246328,10
+schublade,50x58,50246306,10
+schublade,50x58,60509076,10
 Netzdrahtkorb,100x58,00257298,3
 Netzdrahtkorb,100x35,90257294,3
 Netzdrahtkorb,75x58,20257315,3
@@ -132,15 +132,15 @@ Glaseinlegeboden,50x58,40257654,3
 Kleiderstange,100x35,10446449,3
 Kleiderstange,75x35,80446455,3
 Kleiderstange,50x35,50446452,3
-Schublade mit Glasfront,100x58,20246708,7
-Schublade mit Glasfront,75x58,10246695,7
-Schublade mit Glasfront,50x58,70246683,7
-Schublade mit Glasfront,100x58,00246714,7
-Schublade mit Glasfront,75x58,50246702,7
-Schublade mit Glasfront,50x58,10246681,7
-Schublade mit Glasfront,100x58,80509202,7
-Schublade mit Glasfront,75x58,50509208,7
-Schublade mit Glasfront,50x58,10509205,7
+Schublade mit Glasfront,100x58,20246708,10
+Schublade mit Glasfront,75x58,10246695,10
+Schublade mit Glasfront,50x58,70246683,10
+Schublade mit Glasfront,100x58,00246714,10
+Schublade mit Glasfront,75x58,50246702,10
+Schublade mit Glasfront,50x58,10246681,10
+Schublade mit Glasfront,100x58,80509202,10
+Schublade mit Glasfront,75x58,50509208,10
+Schublade mit Glasfront,50x58,10509205,10
 Hosenaufhängung ausziehbar,100x58,00446534,3
 Hosenaufhängung ausziehbar,100x35,60446545,3
 Hosenaufhängung ausziehbar,75x58,70446540,3
@@ -161,12 +161,12 @@ Auszugschienen für Körbe,58,10263232,0
 Hakenleiste,58,80262489,3
 Hakenleiste,35,30256909,3
 Hakenleiste,58,20262487,3
-"Schuhregal, ausziehbar",100x58,00257463,9
-"Schuhregal, ausziehbar",75x58,30257466,9
-"Schuhregal, ausziehbar",50x58,80257464,9
-"Schuhregal, ausziehbar",100x58,10257467,9
-"Schuhregal, ausziehbar",75x58,30257471,9
-"Schuhregal, ausziehbar",50x58,70257469,9
+"Schuhregal, ausziehbar",100x58,00257463,10
+"Schuhregal, ausziehbar",75x58,30257466,10
+"Schuhregal, ausziehbar",50x58,80257464,10
+"Schuhregal, ausziehbar",100x58,10257467,10
+"Schuhregal, ausziehbar",75x58,30257471,10
+"Schuhregal, ausziehbar",50x58,70257469,10
 Ausziehboden mit Einsatz,100x58,49249532,0
 Ausziehboden mit Einsatz,100x58,09437035,0
 Ausziehboden mit Einsatz,100x58,09249529,0
@@ -188,20 +188,20 @@ Schuhregal,50x35,60257257,3
 Schuhregal,100x35,90257251,3
 Schuhregal,75x35,20257259,3
 Schuhregal,50x35,00257255,3
-Trenner T,100x58,00246417,9
-Trenner T,100x58,40509218,9
-Trenner T,100x58,60246419,9
+Trenner T,100x58,00246417,7
+Trenner T,100x58,40509218,7
+Trenner T,100x58,60246419,7
 Schutzmatte,90x53,30405565,0
 Trennsteg für Ausziehboden,100x58,70466793,0
-Schublade mit Glasfrontrahmen,100x58,90447020,9
-Schublade mit Glasfrontrahmen,100x35,80447011,9
-Schublade mit Glasfrontrahmen,75x58,60447026,9
-Schublade mit Glasfrontrahmen,75x35,50447017,9
-Schublade mit Glasfrontrahmen,50x58,30447023,9
-Schublade mit Glasfrontrahmen,50x35,20447014,9
-Schublade mit Glasfrontrahmen,100x58,50509656,9
-Schublade mit Glasfrontrahmen,75x58,90509664,9
-Schublade mit Glasfrontrahmen,50x58,90509659,9
+Schublade mit Glasfrontrahmen,100x58,90447020,10
+Schublade mit Glasfrontrahmen,100x35,80447011,10
+Schublade mit Glasfrontrahmen,75x58,60447026,10
+Schublade mit Glasfrontrahmen,75x35,50447017,10
+Schublade mit Glasfrontrahmen,50x58,30447023,10
+Schublade mit Glasfrontrahmen,50x35,20447014,10
+Schublade mit Glasfrontrahmen,100x58,50509656,10
+Schublade mit Glasfrontrahmen,75x58,90509664,10
+Schublade mit Glasfrontrahmen,50x58,90509659,10
 Scharnier,Standard,00214505,0
 Ausziehboden mit Trennsteg,100x58,89331997,0
 Ausziehboden mit Trennsteg,75x58,19332009,0
