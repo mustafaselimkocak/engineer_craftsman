@@ -250,8 +250,8 @@ Ausziehboden mit Schubladenmatte,50x58,89554964,0
 Ausziehboden mit Schubladenmatte,100x58,29554957,0
 Ausziehboden mit Schubladenmatte,75x58,69554979,0
 Ausziehboden mit Schubladenmatte,50x58,99554968,0
-"Einsatz, 4 Fächer",25x53x5,50404032,0
-"Einsatz, 4 Fächer",15x53x5,70404026,0
+Einsatz, 4 Fächer,25x53x5,50404032,0
+Einsatz, 4 Fächer,15x53x5,70404026,0
 Einsatz mit Fach,40x53x5,50404027,0
 Ausziehboden mit Einsatz,100x58,49249363,0
 Ausziehboden mit Einsatz,100x58,49437000,0
@@ -332,7 +332,7 @@ türen,50x229,60391091,12
 türen,50x195,40391092,12
 türen,25x229,80423604,12
 türen,25x195,20423602,12
-türen,50x229,90510931,12
+Tür FORSAND,50x229,90510931,12
 türen,50x195,90510926,12
 türen,50x229,30434964,12
 türen,50x195,90434961,12
@@ -500,7 +500,6 @@ Aufbewahrungstasche,34x51x28,90503916,0
 Aufbewahrungstasche,34x51x19,90503921,0
 Bohrschablone,Standard,90323393,0
 Treiber für kabellose Steuerung,10 W,50356187,0
-Anschlusskabel,35 m,50446881,0
 Knopf BAGGANAS tiefgrün,21 mm,90588005,0
 Knopf BAGGANAS schwarz,20 mm,10338416,0
 Knopf BAGGANAS schwarz,21 mm,90338417,0
@@ -524,7 +523,7 @@ Knopf,35 mm,00347505,0
 Knopf,27 mm,00347510,0
 Knopf,20 mm,50347503,0
 Knopf,35 mm,80347511,0
-Knopf,16 mm,90625588,0
+Knopf NYDALA,16 mm,90625588,0
 Griff BAGGANAS tiefgrün,143 mm,40588003,0
 Griff BAGGANAS schwarz,143 mm,80338413,0
 Griff BAGGANAS schwarz,335 mm,60338414,0
@@ -605,8 +604,6 @@ Rahmen f Schiebetürpaar mit Schiene,200x236,20458192,50
 4 Paneele f Schiebetürrahmen,75x236,50575571,0
 4 Paneele f Schiebetürrahmen,100x201,30575572,0
 4 Paneele f Schiebetürrahmen,100x236,90575574,0
-Treiber für kabellose Steuerung,30 W,60342656,0
-Kabelloser Dimmer/Schalter,NA,20528128,0
 4 Paneele f Schiebetürrahmen,75x236,70480685,0
 4 Paneele f Schiebetürrahmen,75x201,20480683,0
 4 Paneele f Schiebetürrahmen,100x201,20480678,0
@@ -638,4 +635,8 @@ Box KOMPLEMENT 4er-Set hellgrau,40x54,99260838,0
 Schuhbox SKUBB dunkelgrau,22x34x16,80400004,0
 Schuhbox SKUBB weiß,22x34x16,90186391,0
 Verbindungskabel FORNIMMA,2m,30394699,0
+Anschlusskabel FORNIMMA,350 cm,50446881,0
 Schutzmatte,90x53,50465389,0
+Fernbedienung BILRESA weiß smart/Dualschalter,standard,10604165,0
+Treiber für kabellose Steuerung,30 W,60342656,0
+Kabelloser Dimmer/Schalter,NA,20528128,0
