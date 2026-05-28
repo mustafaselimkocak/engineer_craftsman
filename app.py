@@ -68,7 +68,7 @@ if 'pax_code' not in st.session_state:
 if st.button("Enter"):
 
     # Action to be performed when the button is clicked
-    if len(pax_code) > 8:
+    if len(pax_code) <= 8:
         try:
             st.session_state.pax_code = pax_code
 
