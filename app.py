@@ -1,6 +1,8 @@
 import streamlit as st
+import pax_db
 from scraper import Scraper
 from price_calculator import PriceCalculator
+from pax_db import PAXDatabase
 
 
 # import email_handler 
@@ -52,6 +54,19 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown(
+    """
+    <style>
+    [data-testid="stExpander"] summary p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # Title of the app
 st.title("Engineer Craftsman PAX Price Calculator")
 
@@ -86,6 +101,60 @@ if st.button("Enter"):
             st.write("Not a correct PAX code. Please check your order!")
     else:
         st.write("Not a correct PAX code. Please check your order!")
+
+
+st.write('')
+st.write('')
+st.write('')
+st.write('')
+st.write('')
+
+
+item_column, category_column = st.columns(2)
+
+with item_column.expander("Add an Item", expanded=False):
+
+    with st.form("add_item_form"):
+        category = st.selectbox("Category:", pax_db.category_list)
+        description = st.text_input("Description:")
+        code = st.text_input("Code:")
+        price = st.text_input("Price:")
+        save_item = st.form_submit_button("Save Item")
+
+    if save_item:
+        try:
+            result = PAXDatabase.add_new_item(category, description, code, price)
+
+            if result == "Success":
+                st.success("Item saved.")
+            else:
+                st.error(result)
+
+        except Exception as e:
+            st.error("Item not saved.", e)
+
+with category_column.expander("Update Category Price", expanded=False):
+
+    category_to_update = st.selectbox("Category:", pax_db.category_list, key="category_to_update")
+    old_price = PAXDatabase.get_category_price(category_to_update)
+    old_price_display = st.empty()
+    old_price_display.write(f"Old Price: {old_price}")
+
+    new_price = st.text_input("New Price:")
+    update_price = st.button("Update Price")
+
+    if update_price:
+        try:
+            result = PAXDatabase.update_price(category_to_update, new_price)
+
+            if result == "Success":
+                st.success(f"Category {category_to_update} prices updated as {new_price}.")
+            else:
+                st.error(result)
+
+        except Exception as e:
+            st.error(f"Prices not updated: {e}")
+
 
 st.write('')
 st.write('')
