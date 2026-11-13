@@ -30,11 +30,12 @@ class Scraper:
         items = data.get('itemList', {}).get('item', [])
         item_quantities = [(item['itemNo'], item['quantity']) for item in items]
 
-        df = pd.DataFrame(columns=["Description", "Article No", "Quantity"])
+        df = pd.DataFrame(columns=["Category", "Description", "Article No", "Quantity"])
 
         # Write the results
         for item_no, quantity in item_quantities:
+            category = PAXDatabase.get_category_by_article_no(article_no=item_no)
             description = PAXDatabase.get_description_by_article_no(article_no=item_no)
-            df.loc[len(df)] = {'Description': description, 'Article No': item_no, 'Quantity': quantity}
+            df.loc[len(df)] = {'Category': category, 'Description': description, 'Article No': item_no, 'Quantity': quantity}
 
         return df

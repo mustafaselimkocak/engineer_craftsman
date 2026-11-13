@@ -1,5 +1,7 @@
 import streamlit as st
+import os
 import pax_db
+from github_csv import GitHubCSV
 from scraper import Scraper
 from price_calculator import PriceCalculator
 from pax_db import PAXDatabase
@@ -7,46 +9,6 @@ from pax_db import PAXDatabase
 
 # import email_handler 
 # whitespace for streamlit update !!!
-
-def contact_us():
-    # Title for the Contact Us section
-    st.title("Contact Us")
-
-    # Introduction
-    st.write("""
-    We'd love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.
-    You can reach out to us through the following ways:
-    """)
-
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
-
-    col1, col2, col3 = st.columns(3)
-
-    col1.subheader('📧 Email Us')
-    col1.write(
-        "For any inquiries, you can email us at [engineercraftsman@gmail.com](mailto:engineercraftsman@gmail.com).")
-
-    col2.subheader('📞 Call Us')
-    engineer_craftsman_phone = "+491639171379"
-    col2.write(f"You can also reach us by phone at {engineer_craftsman_phone}.")
-
-    col3.subheader('💬 WhatsApp Us')
-    message = "Hello, I would like to know more about your services."
-    whatsapp_link = f"https://wa.me/{engineer_craftsman_phone}?text={message.replace(' ', '%20')}"
-    col3.markdown(f"[Click here to chat with us on WhatsApp]({whatsapp_link})")
-
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
-
-
-############################################################################################################
 
 st.set_page_config(
     page_title="PAX Price Calculator",
@@ -70,6 +32,27 @@ st.markdown(
 # Title of the app
 st.title("PAX Price Calculator")
 
+# Secrets stay on the server; environment variables are also supported.
+try:
+    github_settings = dict(st.secrets.get("github", {}))
+except FileNotFoundError:
+    github_settings = {}
+
+github_settings = {
+    key: os.environ.get(key) or github_settings.get(key, "")
+    for key in ("GITHUB_TOKEN", "GITHUB_REPOSITORY", "GITHUB_BRANCH")
+}
+try:
+    pax_db.github_store = GitHubCSV(
+        github_settings["GITHUB_TOKEN"],
+        github_settings["GITHUB_REPOSITORY"],
+        github_settings["GITHUB_BRANCH"],
+    ) if any(github_settings.values()) else None
+    pax_db.refresh_items()
+except Exception as error:
+    st.error(f"Could not load the price database: {error}")
+    st.stop()
+
 scraper = Scraper()
 
 price_calculator = PriceCalculator()
@@ -90,6 +73,7 @@ if st.button("Enter"):
             data = scraper.fetch_ikea_data(pax_code)
             results = scraper.write_data_to_table(pax_code, data)
             st.write(f"Item Codes and Quantities in PAX Design with code: {pax_code}")
+            results.index = range(1, len(results) + 1)
             st.dataframe(results)
             price = price_calculator.calculate_prices(results)
             price = round(price)
@@ -126,12 +110,12 @@ with item_column.expander("Add an Item", expanded=False):
             result = PAXDatabase.add_new_item(category, description, code, price)
 
             if result == "Success":
-                st.success("Item saved.")
+                st.success("Item saved to GitHub." if pax_db.github_store else "Item saved locally.")
             else:
                 st.error(result)
 
         except Exception as e:
-            st.error("Item not saved.", e)
+            st.error(f"Item not saved: {e}")
 
 with category_column.expander("Update Category Price", expanded=False):
 
@@ -148,18 +132,11 @@ with category_column.expander("Update Category Price", expanded=False):
             result = PAXDatabase.update_price(category_to_update, new_price)
 
             if result == "Success":
-                st.success(f"Category {category_to_update} prices updated as {new_price}.")
+                old_price_display.write(f"Current Price: {new_price}")
+                destination = "GitHub" if pax_db.github_store else "the local CSV"
+                st.success(f"Category {category_to_update} prices updated to {new_price} in {destination}.")
             else:
                 st.error(result)
 
         except Exception as e:
             st.error(f"Prices not updated: {e}")
-
-
-st.write('')
-st.write('')
-st.write('')
-st.write('')
-st.write('')
-
-## contact_us()
