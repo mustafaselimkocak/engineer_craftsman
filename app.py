@@ -49,7 +49,7 @@ def contact_us():
 ############################################################################################################
 
 st.set_page_config(
-    page_title="Engineer Craftsman",
+    page_title="PAX Price Calculator",
     page_icon="docs/logo.png",
     layout="wide"
 )
@@ -68,7 +68,7 @@ st.markdown(
 )
 
 # Title of the app
-st.title("Engineer Craftsman PAX Price Calculator")
+st.title("PAX Price Calculator")
 
 scraper = Scraper()
 
@@ -162,4 +162,4 @@ st.write('')
 st.write('')
 st.write('')
 
-contact_us()
+## contact_us()
