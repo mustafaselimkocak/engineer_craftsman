@@ -165,6 +165,26 @@ class PAXDatabase:
         return "Success"
 
     @staticmethod
+    def delete_item(article_code):
+        """Delete an article by its exact code using the latest CSV."""
+        global pax_df, category_list
+
+        article_code = "" if pd.isna(article_code) else str(article_code).strip().replace(".", "")
+        if not article_code:
+            return "Article code is required."
+
+        original_df = _read_items()
+        matching_items = original_df["Code"].eq(article_code).fillna(False)
+        if not matching_items.any():
+            return f"Article {article_code} not found. No item was deleted."
+
+        updated_df = original_df.loc[~matching_items].reset_index(drop=True)
+        _write_items(updated_df, original_df, f"Delete PAX article {article_code}")
+        pax_df = updated_df
+        category_list = pax_df["Category"].dropna().unique().tolist()
+        return "Success"
+
+    @staticmethod
     def get_category_price(category):
         """Read the first available price for a category from the current CSV."""
         items = _read_items()

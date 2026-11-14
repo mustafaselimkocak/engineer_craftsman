@@ -117,6 +117,22 @@ with item_column.expander("Add an Item", expanded=False):
         except Exception as e:
             st.error(f"Item not saved: {e}")
 
+with item_column.expander("Delete an Item", expanded=False):
+    with st.form("delete_item_form"):
+        code_to_delete = st.text_input("Article Code:", key="code_to_delete")
+        delete_item = st.form_submit_button("Delete Item")
+
+    if delete_item:
+        try:
+            result = PAXDatabase.delete_item(code_to_delete)
+            if result == "Success":
+                destination = "GitHub" if pax_db.github_store else "the local CSV"
+                st.success(f"Item deleted from {destination}.")
+            else:
+                st.error(result)
+        except Exception as e:
+            st.error(f"Item not deleted: {e}")
+
 with category_column.expander("Update Category Price", expanded=False):
 
     category_to_update = st.selectbox("Category:", pax_db.category_list, key="category_to_update")
