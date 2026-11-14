@@ -4,7 +4,9 @@ from io import StringIO
 import pandas as pd
 
 PAX_CSV_PATH = "docs/PAXCostAnalysis.csv"
+NOT_FOUND_ARTICLES_PATH = "docs/not_found_articles.txt"
 github_store = None
+not_found_github_store = None
 
 
 def _read_items():
@@ -111,12 +113,23 @@ class PAXDatabase:
 
     @staticmethod
     def add_article_no_to_not_found(article_no):
-        with open('docs/not_found_articles.txt', 'a+') as file:
+        if not_found_github_store is not None:
+            content, sha = not_found_github_store.read()
+            if article_no not in content.splitlines():
+                separator = "\n" if content and not content.endswith("\n") else ""
+                not_found_github_store.write(
+                    content + separator + article_no + "\n",
+                    sha,
+                    f"Record missing PAX article {article_no}",
+                )
+            return
+
+        with open(NOT_FOUND_ARTICLES_PATH, 'a+', encoding='utf-8') as file:
             file.seek(0)
             content = file.read()
-            if article_no not in content:
-                file.write(article_no + '\n')
-            file.close()
+            if article_no not in content.splitlines():
+                separator = "\n" if content and not content.endswith("\n") else ""
+                file.write(separator + article_no + '\n')
 
     @staticmethod
     def add_new_item(category, description, code, price):

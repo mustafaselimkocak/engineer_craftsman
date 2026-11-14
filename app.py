@@ -48,6 +48,12 @@ try:
         github_settings["GITHUB_REPOSITORY"],
         github_settings["GITHUB_BRANCH"],
     ) if any(github_settings.values()) else None
+    pax_db.not_found_github_store = GitHubCSV(
+        github_settings["GITHUB_TOKEN"],
+        github_settings["GITHUB_REPOSITORY"],
+        github_settings["GITHUB_BRANCH"],
+        path=pax_db.NOT_FOUND_ARTICLES_PATH,
+    ) if any(github_settings.values()) else None
     pax_db.refresh_items()
 except Exception as error:
     st.error(f"Could not load the price database: {error}")
@@ -80,6 +86,8 @@ if st.button("Enter"):
             st.write(f"THE COST:  {price} €")
             #st.write(f"THE COST:  {price} €  (incl. VAT)")
 
+        except RuntimeError as e:
+            st.error(str(e))
         except Exception as e:
             print(e)
             st.write("Not a correct PAX code. Please check your order!")
