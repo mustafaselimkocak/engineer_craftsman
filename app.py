@@ -119,7 +119,7 @@ with item_column.expander("Add an Item", expanded=False):
 
 with item_column.expander("Delete an Item", expanded=False):
     with st.form("delete_item_form"):
-        code_to_delete = st.text_input("Article Code:", key="code_to_delete")
+        code_to_delete = st.text_input("Code:", key="code_to_delete")
         delete_item = st.form_submit_button("Delete Item")
 
     if delete_item:
